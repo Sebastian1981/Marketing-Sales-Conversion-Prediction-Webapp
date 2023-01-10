@@ -133,3 +133,6 @@ dmypy.json
 
 # dont synchronize model artifacts folder
 /artifacts
+
+# ignore private info
+private.txt
