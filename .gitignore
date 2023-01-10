@@ -127,3 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# dont synchronize data folder
+/data
+
+# dont synchronize model artifacts folder
+/artifacts
