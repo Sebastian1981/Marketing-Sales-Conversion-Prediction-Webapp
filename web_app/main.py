@@ -14,8 +14,7 @@ def main():
         try:
             st.markdown(Path('About.md').read_text())
         except:
-            st.markdown(Path('/app/marketing-sales-customer-conversion-prediction-webapp/web_app/About.md').read_text())
-    
+            st.markdown(Path('/app/marketing-sales-conversion-prediction-webapp/web_app/About.md').read_text())
     elif choice == "Conversion Prediction":
         st.subheader('Predict Conversion')
         run_scoring_app()
