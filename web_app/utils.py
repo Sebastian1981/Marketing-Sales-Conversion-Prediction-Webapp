@@ -37,16 +37,16 @@ def prepare_data(df:pd.DataFrame, numeric_columns, categorical_columns)->pd.Data
         with open('capper.pickle', 'rb') as filename: # trained model to cap outliers
             capper = pickle.load(filename)
     except:
-        with open('/app/marketing-sales-customer-churn-prediction-webapp/web_app/numeric_imputer.pickle', 'rb') as filename: # trained model to impute missing numeric data
+        with open('/app/marketing-sales-conversion-prediction-webapp/web_app/numeric_imputer.pickle', 'rb') as filename: # trained model to impute missing numeric data
             numeric_imputer = pickle.load(filename)
 
-        with open('/app/marketing-sales-customer-churn-prediction-webapp/web_app/categorical_imputer.pickle', 'rb') as filename: # trained model to impute missing categorical data
+        with open('/app/marketing-sales-conversion-prediction-webapp/web_app/categorical_imputer.pickle', 'rb') as filename: # trained model to impute missing categorical data
             categorical_imputer = pickle.load(filename)
 
-        with open('/app/marketing-sales-customer-churn-prediction-webapp/web_app/rare_encoder.pickle', 'rb') as filename: # trained model to encode rare labels
+        with open('/app/marketing-sales-conversion-prediction-webapp/web_app/rare_encoder.pickle', 'rb') as filename: # trained model to encode rare labels
             rare_encoder = pickle.load(filename)
 
-        with open('/app/marketing-sales-customer-churn-prediction-webapp/web_app/capper.pickle', 'rb') as filename: # trained model to cap outliers
+        with open('/app/marketing-sales-conversion-prediction-webapp/web_app/capper.pickle', 'rb') as filename: # trained model to cap outliers
             capper = pickle.load(filename)  
 
     # impute mising numeric features
@@ -92,7 +92,7 @@ def hotencode_df(df:pd.DataFrame, numeric_columns, categorical_columns)->pd.Data
         with open('enc.pickle', 'rb') as filename: # trained one hot encoder
             enc = pickle.load(filename)
     except:
-        with open('/app/marketing-sales-customer-churn-prediction-webapp/web_app/enc.pickle', 'rb') as filename: 
+        with open('/app/marketing-sales-conversion-prediction-webapp/web_app/enc.pickle', 'rb') as filename: 
             enc = pickle.load(filename)
 
     # one hot encoding categorical features
@@ -114,7 +114,7 @@ def predict_conversion(df:pd.DataFrame, numeric_columns, categorical_columns)->p
         with open('model.pickle', 'rb') as filename: # trained random forest classifier
             model = pickle.load(filename)
     except:
-        with open('/app/marketing-sales-customer-churn-prediction-webapp/web_app/model.pickle', 'rb') as filename: 
+        with open('/app/marketing-sales-conversion-prediction-webapp/web_app/model.pickle', 'rb') as filename: 
             model = pickle.load(filename)
 
     # hotencode features
