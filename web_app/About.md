@@ -7,3 +7,11 @@ The goal of this project is to create a conversion prediction model that leverag
 
 **Challenge:**  
 This project was a complex undertaking that involved several different challenges. From data cleaning and data preparation to data modeling and building a web app, this project required an end-to-end pipeline. Additionally, the project required deploying the web app in a Docker container, which can be hosted on a local server and/or in a cloud environment like AWS, Azure or GCP. As such, this project presented a unique challenge in terms of creating a comprehensive, unified workflow that was both efficient and effective.
+
+**Solution Steps:**
+1. undestanding and exploring the historical dataset of marketing campaigns using different data visualisation techniques using jupyter notebook
+2. preparing the data for statistical modeling using jupyter notebook
+3. training and tuning the best machine learning model using jupyter notebook
+4. extract the diving features of marketing conversion exploiting novel methods of explainable artificial intelligence using jupyter notebook
+5. implementing a web app to predict individual conversion probabilities using streamlit 
+6. deployment of the web app using docker and streamlit cloud 
