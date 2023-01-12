@@ -9,7 +9,7 @@ def main():
     choice = st.sidebar.selectbox("Menu", menu)
 
     if choice == "About":
-        st.subheader("About")
+        st.subheader("About this Project:")
         # depending on deployment i.e. local, docker or streamlit clout try different paths
         try:
             st.markdown(Path('About.md').read_text())
