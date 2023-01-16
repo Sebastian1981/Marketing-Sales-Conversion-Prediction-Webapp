@@ -136,3 +136,6 @@ dmypy.json
 
 # ignore private info
 private.txt
+
+# dont sync images
+#/images
