@@ -37,16 +37,15 @@ vscode, python, jupyter, pandas, numpy, sklearn, shap, docker, streamlit
 5. implementing a web app to predict individual conversion probabilities using streamlit 
 6. deployment of the web app using docker and streamlit cloud 
 
-## **Key Findings:**
-### **Average Engagement Rate:**
+## **Key Findings - Average Engagement Rate:**
 
 <img src="images/engagement_rate.jpg" 
 width="600" 
 style="object-fit: contain;">
 
-The average engagement rate among all customers is 12%.
+The average engagement rate among all customers is 12%. Hence, not leveraging the power of AI to focus targeting only the customers with the highest conversion rate is very ineffective.
 
-### **Key Drivers to Marketing Engagement:**
+## **Key Findings - Drivers to Marketing Engagement:**
 
 <p style="text-align:center;"><strong>Distribution Plots for Age</strong></p>
 <img src="images/age_dist.jpg" 
@@ -98,4 +97,20 @@ style="object-fit: contain;">
 
 The figure above explicitly shows how the customers age relates to engagement probability.
 
-### **Engagement Prediction Model Evaluation**
+<br><br>
+## **Key Findings - Engagement Prediction Model Evaluation:**
+
+<p style="text-align:center;"><strong>Conusion Matrix on Test Data</strong></p>
+<img src="images/confusion_matrix_gb.jpg" 
+width="400" 
+style="object-fit: contain;">
+
+The confusion matrix shows the model performance in the form of the confusion matrix of the test dataset (i.e. data the model has not seen during training). It shows that the recall and the precision of the ml-model are both around 40%. But what does the accuracy of the model translate into increasing the effectiveness of the marketing campaign based on the ml-model?
+
+<p style="text-align:center;"><strong>CAP and Lift Curve on Test Data</strong></p>
+<img src="images/cap_lift_curves_gb.jpg" 
+width="800" 
+style="object-fit: contain;">
+<p style="text-align:center;"><strong>Cumulative gain curve (left) and lift curve (right).</strong></p>
+
+The cumulative gain and the lift curves show that contacting only the top 20% of the customers with the highest conversion probabilities predicted by the model yields around 50% engagement. This corresponds to a lift of around 2.5 compared to randomly picking customers i.e. not using any predictive model.
