@@ -142,7 +142,7 @@ def plot_cluster_distribution(df:pd.DataFrame):
         data=df, 
         x='conversion',
         bins=15)
-    plt.title('Converters / None-Converters Distribution')
+    plt.title('Converters / Non-Converters Distribution')
     plt.grid('on')
     st.pyplot(fig)
 
@@ -153,7 +153,7 @@ def pie_plot_cluster_distribution(df:pd.DataFrame):
     cluster_labels = []
     for c in df['conversion'].value_counts().index.tolist():
         if c == 0:
-            cluster_labels.append('None-Converters')
+            cluster_labels.append('Non-Converters')
         else:
             cluster_labels.append('Converters')
 
