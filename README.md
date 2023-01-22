@@ -4,9 +4,12 @@
 Marketing conversion prediction adds tremendous value to any marketing campaign. By leveraging data and predictive analytics, marketers are able to anticipate and measure the likelihood of a customer or user completing a desired action. This gives marketers the opportunity to strategically target the most valuable customers and maximize their ROI. 
 
 **Goal:**  
+
+![crisp-dm](images/crisp_dm.png)
+
 The goal of this project is to create a conversion prediction model that leverages data and predictive analytics to help marketers maximize their ROI. The project is split into three parts. 
 
-![crisp-dm]('images/CRISPDM.png')
+
 
 Part 1.) Data Understanding, Data Preparation and Model Training, Tuning and Evaluation. 
 
