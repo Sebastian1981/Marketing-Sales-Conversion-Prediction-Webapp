@@ -125,3 +125,10 @@ The cumulative gain and the lift curves show that contacting only the top 20% of
 
 <br><br>
 ## **Model Deployment**
+Based on the marketing engagement prediction model a web app was developed and deployed on [Docker-Hub](https://hub.docker.com/r/63531981/conversion_prediction_app) and in the [Streamlit-Cloud](https://sebastian1981-marketing-sales-conversion-pre-web-appmain-y81hcx.streamlit.app/)
+
+<br><br>
+<img src="images/streamlit_app.jpg" 
+width="400" 
+style="object-fit: contain;">
+<p style="text-align:center;"><strong>Screenshot of the Marketing Engagement Prediction App.</strong></p>
