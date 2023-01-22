@@ -9,7 +9,7 @@ https://archive.ics.uci.edu/ml/datasets/bank+marketing
 
 ## **Project Goal:**  
 The goal of this project is to  
-1. identify engagement drivers, 
+1. identify the key drivers to marketing engagement, 
 2. evaluate engagement prediction model,
 3. implement web app using streamlit
 3. transform web app into highly efficient software using Docker
@@ -48,20 +48,54 @@ The average engagement rate among all customers is 12%.
 
 ### **Key Drivers to Marketing Engagement:**
 
+<p style="text-align:center;"><strong>Distribution Plots for Age</strong></p>
 <img src="images/age_dist.jpg" 
 width="800" 
 style="object-fit: contain;">
 
+
 Apparently there is a clear age effect on the engagement rate. The age groups around 20 years and between 60-70 years are more likely to engage than the mid-agers.
 
+<p style="text-align:center;"><strong>Distribution Plots for Month</strong></p>
 <img src="images/month_dist.jpg" 
 width="800" 
 style="object-fit: contain;">
+<p style="text-align:center;"><strong>Pie-Plots of the monthly-distributions for the Non-Converters (left) and the Converters (right).</strong></p>
 
 There is a clear seasonal effect on engagement rate. E.g. in the non-converters group, the largest proportion of customers is found in the month of May whereas in the converters group the proportion of customers in May is clearly smaller. Therefore, the month of May seems to have an unfavorable effect on the success of a marketing campaign.
 
+<p style="text-align:center;"><strong>Decision Tree Analysis</strong></p>
 <img src="images/decision_tree_analysis.png" 
 width="800" 
 style="object-fit: contain;">
+<p style="text-align:center;"><strong>Prescriptive Analytics using a Simple Decision Tree.</strong></p>
 
 The simple decision tree analysis shows that features "p_outcome", "contact" and "age" are among the key engagement drivers. The "p_outcome" variable represents whether the last marketing campaign was successful with a particular customer or not. The "contact" and "age" variables represent the type of contact and the customer ́s age, respectively. If we take a closer look at the decision tree, we can see, for example, that the conversion rate is 91% if the last marketing campaign was successful (“p_outcome_successfull”) and the customer is in the younger age group (“age<17.5”). In comparison, the global conversion rate is only 12%. Hence, focusing on this young-age group would already lift the conversion rate by a factor of more than 7. The decision tree analysis remarkably shows the value this data-based analysis can add for optimizing marketing campaigns. However, we would like a more comprehensive insight into the key drivers and their effect on engagement rates. Therefore, we applied a state-of-the-art explainable artificial intelligence approach to gain complete insight to what drives marketing success.
+
+<p style="text-align:center;"><strong>Shap Bar Plot</strong></p>
+<img src="images/shap_values_bar.jpg" 
+width="800" 
+style="object-fit: contain;">
+<p style="text-align:center;"><strong>Key marketing engagement drivers detected by applying high performance complex machine 
+learning models in combination with state-of-the-art explainable artificial intelligence methods.</strong></p>
+
+The bar-plot of the shap-values show that the top-5 key drivers to marketing engagement are the features “contact_telephone”, “month_may”, “default_unkknown”, “age” and “poutcome_success”. The x-axis shows the likelihood of conversion affected by each feature. E.g. the features “contact_telephone” and “age” affect the likelihood of conversion on average by approx. 28% and 11%, respectively.
+
+<p style="text-align:center;"><strong>Shap Violin Plot</strong></p>
+<img src="images/shap_values_violin.jpg" 
+width="800" 
+style="object-fit: contain;">
+<p style="text-align:center;"><strong>Key drivers and their explicit effect on the likelihood on engagement for each customer.</strong></p>
+
+The shap value violine plot yields a deeper insight into the key drivers to engagement and their explicit affects on the likelihood on the conversion rate. Thereby each datapoint represents one customer. The impressive feature of this state-of-the-art explainable artificial intelligence approach is that the engagement probabilities can simply be linearly added up. E.g. contacting the customers not via telephone leads to a conversion probability of around 18% on 
+average (center of blue distribution). The conversion probability is further increased by around 15% if the customer are not contacted in the month of May. Focusing on the customers with a known credit-default history increases the probability of engagement by further 10% approx. Hence, targeting this group, we end up with a net engagement probability of approx. 43%, which is significantly higher than the global conversion rate of 12%. Note that based on that powerful state-of-the-art explainable artificial intelligence approach, you can simply estimate the effective engagement probability for any target group! 
+
+<p style="text-align:center;"><strong>Shape Dependence Plot for Age</strong></p>
+<img src="images/shap_dependence_plot_age.jpg" 
+width="800" 
+style="object-fit: contain;">
+<p style="text-align:center;"><strong>Age Effect on Engagement Probability.</strong></p>
+
+The figure above explicitly shows how the customers age relates to engagement probability.
+
+### **Engagement Prediction Model Evaluation**
