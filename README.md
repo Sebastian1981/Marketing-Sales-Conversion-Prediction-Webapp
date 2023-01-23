@@ -1,5 +1,6 @@
 # Marketing Engagement Prediction Model to Maximize ROI: Implementation of an End-to-End Machine Learning Solution 
 
+<br>
 ## **Outline:**  
 - [Motivation](#motivation)
 - [Data Source](#data-source)
@@ -13,16 +14,16 @@
 - [Model Deployment](#model-deployment)
 
 
-<br><br>
+<br>
 ## **Motivation:**  
 Marketing conversion prediction adds tremendous value to any marketing campaign. By leveraging data and predictive analytics, marketers are able to anticipate and measure the likelihood of a customer or user completing a desired action. This gives marketers the opportunity to strategically target the most valuable customers and maximize their ROI. 
 
-<br><br>
+<br>
 ## **Data Source:**  
 This demo project is based on the publicly available dataset from the UCI machine learning repository: 
 https://archive.ics.uci.edu/ml/datasets/bank+marketing
 
-<br><br>
+<br>
 ## **Project Goal:**  
 The goal of this project is to  
 1. identify the key drivers to marketing engagement, 
@@ -31,7 +32,7 @@ The goal of this project is to
 3. transform web app into highly efficient software using Docker
 4. deployed model in streamlit cloud: [streamlit cloud](https://sebastian1981-marketing-sales-conversion-pre-web-appmain-y81hcx.streamlit.app/)
  
-<br><br>
+<br>
 ## **Solution Approach:**  
 The project is developed according to the well-known CRISP-DM
 [CRISP-DM Model](https://en.wikipedia.org/wiki/Cross-industry_standard_process_for_data_mining).
@@ -43,11 +44,11 @@ style="object-fit: contain;">
 - "Business Understanding", "Data Understanding", "Data Preparation", "Modeling" & "Evaluation": see Jupyter Notebook "/experiment/01_bank_customer_conversion_prediction_poc.ipynb". 
 - "Deployment": see Jupyter Notebook "/experiment/02_bank_customer_conversion_prediction_scoring_pipeline.ipynb" and "/web_app". 
 
-<br><br>
+<br>
 ## **Tools:**  
 vscode, python, jupyter, pandas, numpy, sklearn, shap, docker, streamlit
 
-<br><br>
+<br>
 ## **Solution Steps:**
 1. undestanding and exploring the historical dataset of marketing campaigns using different data visualisation techniques using jupyter notebook
 2. preparing the data for statistical modeling using jupyter notebook
@@ -56,7 +57,7 @@ vscode, python, jupyter, pandas, numpy, sklearn, shap, docker, streamlit
 5. implementing a web app to predict individual conversion probabilities using streamlit 
 6. deployment of the web app using docker and streamlit cloud 
 
-<br><br>
+<br>
 ## **Key Findings - Average Engagement Rate:**
 
 <img src="images/engagement_rate.jpg" 
@@ -65,7 +66,7 @@ style="object-fit: contain;">
 
 The average engagement rate among all customers is 12%. Hence, not leveraging the power of AI to focus targeting only the customers with the highest conversion rate is very ineffective.
 
-<br><br>
+<br>
 ## **Key Findings - Drivers to Marketing Engagement:**
 
 <p style="text-align:center;"><strong>Distribution Plots for Age</strong></p>
@@ -118,7 +119,7 @@ style="object-fit: contain;">
 
 The figure above explicitly shows how the customers age relates to engagement probability.
 
-<br><br>
+<br>
 ## **Key Findings - Engagement Prediction Model Evaluation:**
 
 <p style="text-align:center;"><strong>Conusion Matrix on Test Data</strong></p>
@@ -136,11 +137,11 @@ style="object-fit: contain;">
 
 The cumulative gain and the lift curves show that contacting only the top 20% of the customers with the highest conversion probabilities predicted by the model yields around 50% engagement. This corresponds to a lift of around 2.5 compared to randomly picking customers i.e. not using any predictive model.
 
-<br><br>
+<br>
 ## **Model Deployment**
 Based on the marketing engagement prediction model a web app was developed and deployed on [Docker-Hub](https://hub.docker.com/r/63531981/conversion_prediction_app) and in the [Streamlit-Cloud](https://sebastian1981-marketing-sales-conversion-pre-web-appmain-y81hcx.streamlit.app/)
 
-<br><br>
+<br>
 <img src="images/streamlit_app.jpg" 
 width="400" 
 style="object-fit: contain;">
