@@ -1,5 +1,18 @@
 # Marketing Engagement Prediction Model to Maximize ROI: Implementation of an End-to-End Machine Learning Solution 
 
+## **Outline:**  
+- [Motivation](#motivation)
+- [Data Source](#data-source)
+- [Project Goal](#project-goal)
+- [Solution Approach](#solution-approach)
+- [Tools](#tools)
+- [Solution Steps](#solution-steps)
+- [Key Findings - Average Engagement Rate](#key-findings---average-engagement-rate)
+- [Key Findings - Drivers to Marketing Engagement](#key-findings---drivers-to-marketing-engagement)
+- [Key Findings - Engagement Prediction Model Evaluation](#key-findings---engagement-prediction-model-evaluation)
+- [Model Deployment](#model-deployment)
+
+
 <br><br>
 ## **Motivation:**  
 Marketing conversion prediction adds tremendous value to any marketing campaign. By leveraging data and predictive analytics, marketers are able to anticipate and measure the likelihood of a customer or user completing a desired action. This gives marketers the opportunity to strategically target the most valuable customers and maximize their ROI. 
